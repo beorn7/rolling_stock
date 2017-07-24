@@ -1,0 +1,1759 @@
+\documentclass[10pt,final]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[letterpaper,
+            top=1.8cm, bottom=1.8cm, left=1.6cm, right=1.6cm]{geometry}
+\usepackage{multicol,graphicx}
+\usepackage{sfmath,mathabx,wasysym}
+\usepackage[table]{xcolor}
+\usepackage[compact]{titlesec}
+
+%\renewcommand{\familydefault}{\sfdefault}
+
+%\setlength{\parindent}{0pt}
+%\setlength{\parskip}{0.3ex plus 0.5ex minus 0.2ex}
+\setlength{\columnseprule}{0pt}
+\setlength{\columnsep}{1.8cm}
+
+
+
+%\titleformat{\chapter}[display]
+%{\normalfont\bfseries}
+%{\LARGE Chapter \thechapter}
+%{1ex}
+%{\LARGE}
+%[{}]
+
+\definecolor{red}{rgb}{1.0,0.3,0.3}
+\definecolor{orange}{rgb}{1.0,0.7,0.2}
+\definecolor{yellow}{rgb}{1.0,1.0,0.0}
+\definecolor{green}{rgb}{0.5,1.0,0.5}
+\definecolor{blue}{rgb}{0.7,0.7,1.0}
+\definecolor{purple}{rgb}{0.8,0.5,1.0}
+
+\begin{document}
+
+%\title{This page to be replaced by custom title page,
+%indicating that chapter 1 of this booklet is the first
+%thing a new player should read.}
+%\author{Björn Rabenstein}
+%\date{v1.2sp (\today)}
+%\maketitle
+
+\textbf{TODO: Decide if this \LaTeX source should be refined into the
+  final version, or everything should just be imported into AAG's
+  usual DTP program.}
+
+\textbf{TODO: Add title page.}
+
+\textbf{TODO: Replace \$ by the final money symbol.}
+
+\textbf{TODO: Adjust to final game design (corporation names and
+  symbols (or call them logo now?), description of components, does
+  play money exist?, circles vs. diamonds for synergies \dots).}
+
+\textbf{TODO: Perhaps move certain things into ``boxes'': Receivership
+  could be explained in a box rather than its own section. Whenever a
+  special ability is explained, it could be put into a box with the
+  corporations logo in the background.}
+
+\setcounter{tocdepth}{1}
+\setcounter{page}{3}
+\tableofcontents
+
+\chapter{Learning the game}
+
+\begin{multicols}{2}
+
+  This chapter is an introduction to the game \emph{Rolling Stock
+    Stars}. It is written in a casual and easy-to-understand way, with
+  a lot of examples, figures, and helpful explanations. Read it first
+  to learn the game.
+
+  Later, when you need to refresh your knowledge of the rules or you
+  want a precise answer to rules questions, refer to the canonical
+  rules (the smaller booklet delivered with the game). Those rules
+  are supposed to be the single and complete ``source of
+  truth''. Thus, all the examples and explanations in this
+  introduction are meant as a help to understand the rules but not to
+  add or change any rules.
+
+\section{Overview}
+
+\emph{Rolling Stock Stars} is a card game for three to six
+players. The players take the role of investors. They buy private
+companies, which they may later turn into corporations or sell to
+already existing corporations. In addition, they can trade shares of
+those corporations. The player with the most shares in a corporation
+becomes its president and controls its actions. Corporations may own
+any number of those formerly private companies (that were sold to them
+by players or were used as the seed to found a new
+corporation). Companies owned by corporations are called
+\emph{subsidiary companies}. Corporations can even buy subsidiary
+companies from each other.
+
+Note the nomenclature here: Corporations could also be called ``public
+companies''. However, to avoid confusion, we want to keep the meaning
+of the word ``company'' narrow and will not use it for corporations
+(but for the subsidiary companies they own).
+
+Subsidiary companies owned by the same corporation may create
+synergies with each other, increasing the income of the
+corporation. These synergies can be seen as a quite abstract
+representation of transportation networks. (\emph{Rolling Stock Stars}
+has no board and therefore lacks a more concrete representation of
+transportation networks, as you might know it from similarly themed
+games.)
+
+As more and more newer companies are brought into the game,
+older companies become less profitable and have to be written off
+eventually. Corporations have to struggle to stand the test of time.
+
+In the end, the richest player wins the game, measured by the added
+values of privately owned companies, shares of corporations, and cash.
+
+Thematically, the game starts in the 1830s in Prussia. The private
+companies initially available are early Prussian railroad
+companies. Throughout the game, the scope widens. First to Germany,
+then to Europe. Even some non-railroad companies entere the game; the
+last tier of companies represents container ports and airports.
+
+\section{Components}
+
+The game contains two booklets: One is titled \emph{Player's Guide}
+(you are reading it right now), the other is the actual rules (written
+in a very concise and formal way -- comes in handy if you are looking
+for precise answers to your most delicate rules questions, but
+definitely not suitable for learning the rules).
+
+There are six \emph{turn summaries}, describing the nine phases of
+a game turn. Hand out one to each player. 
+
+\textbf{TODO: Add figure with ``synergy markers''.}
+
+Furthermore, you will find 109 round double-sided \emph{synergy
+  markers} (see figure above). There is something missing in the box,
+however: \emph{play money}.  Please use play money from another game
+or --~much preferred~-- poker chips. \textbf{TODO: If play money is
+  included, change this sentence.} The synergy markers and the money
+are meant to be unlimited. In the unlikely case that you run out of
+these components, find other means of tracking money and synergies.
+(Even a small set of poker chips should easily be enough for the game,
+most likely you will not need more than 100 \$1 chips, 100 \$5 chips,
+and 50 \$25 chips. As a last resort, you might even use real coins as
+play money, 1 ``real'' cent translates into \$1 in the game.)
+
+\emph{Rolling Stock Stars} is a card game, so there are obviously cards, 131
+of them. Let's look at them in detail.
+
+\subsection{Player order cards}
+
+\textbf{TODO: Add figure ``player order cards''.}
+
+There are 6 \emph{player order cards}. They are used to randomly
+determine the initial player order and later track the player order
+throughout the game.
+
+\subsection{Company cards}
+
+\textbf{TODO: Add figure ``company cards''.}
+
+\textbf{TODO: Adjust to actual layout of company cards.}
+
+The 36 \emph{company cards} are the core of the game. They come in five
+colors. To assist color-blind players, each color has a geometric
+shape assigned to it: Red ($\bullet$), orange ($\blacktriangleup$),
+yellow ($\sqbullet$), green ($\pentagon$), blue ($\hexagon$).
+
+Each company has a unique face value, printed in the upper left
+corner. The face value is used when calculating the wealth
+of a player at the end of the game (see section \ref{win}). It is also
+the mimimum bid in auctions (see section \ref{t1p1}), and since it is
+unique, it can be used to identify the company (like a serial number).
+
+The numbers printed in parentheses to the right of the face value
+define the price span the company can be sold for to
+corporations. Just beneath the face value, there are a number of stars
+(one to five), which are used to determine share price changes of a
+corporation (section \ref{t2p6}).
+
+In the upper right corner, you'll find a circle with a
+``+\$'' amount. This is the income of of the company. In the middle
+between the face value and the income, you can see the name of the
+company and its abbreviation. Name, abbreviation, and face value are
+each unique. So you can refer to the \emph{Société nationale des
+  chemins de fer français} as ``the Société nationale des chemins de
+fer français'' or ``the SNCF'' or ``the 24''. Whatever you like
+most. The colorful boxes on the company card tell you something about
+the possible synergies with other companies. They will be explained
+later (section \ref{t2p5}).
+
+The back of each company card shows a \emph{cost of ownership}
+(starting from no cost up to \$4). The cost of ownership
+printed on the back of a company card has nothing to do with the cost
+of ownership of the company described on the face of the same
+card. When you set up the game, you will build a deck of face-down
+company cards. The back of the top-most card in that deck determines
+the current cost of ownership applying to all companies whose color
+matches one of the colors in the central rectangle on the back of the
+card. A more detailed explanation of the cost of ownership will follow
+later (section \ref{t3p5}).
+
+\subsection{Game end card}
+
+\textbf{TODO: Add figure ``game end card''.}
+
+The colorful card that have a cost of ownership on both sides is the
+\emph{game end card} (\$7 and \$10). The game end card is used as the
+bottom-most card of the company card deck.
+
+\subsection{Symbol cards}
+
+\textbf{TODO: Add figure ``symbol cards''.}
+
+There are 8 \emph{symbol cards}. Each features the symbol, name, and
+color of a corporation in a central box, together with the text ``All
+X Shares Issued'' (where X is a number between 4 and 7). A
+symbol card is the central component of the corresponding
+corporation. Its shares (see below) are put into the central box. The
+money it owns is placed right of the symbol card, and its share price
+card (see below) to the left. In a horizontal row below the symbol
+card, you line up all the companies the corporation owns as
+\emph{subsidiaries} (which might be as few as one).
+
+\subsection{Share cards}
+
+\textbf{TODO: Add figure ``share cards''.}
+
+There are 44 share cards, between 4 and 7 for each corporation. The
+shares are represented as smaller cards, featuring the symbol and
+color of the respective corporation. The shares are numbered, with the
+1\textsuperscript{st} share marked as the \emph{president's} share.
+
+\subsection{Share price cards}
+
+\textbf{TODO: Add figure ``share price cards''.}
+
+There are 27 white share price cards. These cards are used to mark the
+current price of each share of a corporation. They show the share
+price in the center. Left of the share price, some share price cards
+feature an IPO box. Right of the share price, you'll find another box
+showing you the maximum payout per share. The upper left and upper
+right corner show the two next lower or next higher share prices,
+respectively. The list cross-referencing numbers of shares with
+numbers of stars is used for share price adjustments, as explained
+later.
+
+\subsection{Receivership cards}
+
+\textbf{TODO: Add figure ``receivership card''.}
+
+There are 8 cards titled \emph{corporation in receivership}. They are
+used to mark corporations that are in receivership and contain a rule
+summary how those corporations act in the various phases of a turn.
+
+\subsection{Foreign investor card}
+
+\textbf{TODO: Add figure ``foreign investor card''.}
+
+Finally there is the \emph{foreign investor}. The card contains quite
+a lot of text, explaining the actions of the foreign investor, a kind
+of dummy player. The card is also used to arrange the assets of the
+foreign investor, similar to the symbol card of corporations. Its
+money goes to the right of the card, its companies in a horizontal row
+below it.
+
+The rules will often prompt you to ``turn a card vertically'' or to
+``turn a card back horizontally''. The standard (and ``default'')
+orientation of a card is called ``horizontal'' (i.\,e. if the rules
+don't state anything else, a card is oriented horizontally). If you
+turn the card by 90 degrees, its orientation is called
+``vertical''. Vertical orientation marks a special state of a card and
+is mentioned explicitly in the rules wherever it applies. (Note that
+the player order cards are printed in ``portrait'' orientation rather
+than the usual ``landscape'' orientation. Still their normal
+orientation is referred to as ``horizontal'' and their ``special''
+orientation as ``vertical''.)
+
+\section{Setting up the game}
+
+Set up the game following these steps:
+
+\begin{enumerate}
+\item Each player should have a turn summary handy throughout the
+  game.
+\item Place the money in a central position on the table, easily
+  reachable for everybody. This central area is the
+  \emph{bank}. Initially, it contains all the money in the game, but
+  later, it will also contain shares.
+\item Give each player \$30 from the bank. \emph{Exception:} In a
+  six-player game, each player receives only \$25.
+\item Pick the player order cards corresponding to the number of
+  players. Return the remaining cards to the box. Shuffle the player
+  order cards and deal one random card to each player. The players
+  reveal their cards, which define the initial player order. You don't
+  need to change seating order as the player order will change often
+  throughout the game.
+\item Set the eight symbol cards aside, separately. On top of each
+  symbol card, into the central box, place the shares of the
+  corresponding corporation. Sort the shares, with the
+  1\textsuperscript{st} share on top.
+\item In another area of the table, lay out the 27 share price cards in a
+  long, sorted row, starting with \$0 and ending with \$75. Most
+  tables will not be long enough for this row. Feel free to break the
+  row, e.\,g. into three rows of nine cards each. But keep in mind
+  that it is effectively still one long row.
+\item Pick one player who will be in charge of executing the actions
+  of the foreign investor. (There are no decisions involved. That
+  player only has to make sure that those actions are executed
+  according to the rules and not forgotten.) Place the foreign
+  investor card in reach of that player. Place \$4 (from the bank)
+  into the treasury of the foreign investor (i.\,e. to the right of
+  the foreign investor card).
+\item In the following steps, you'll build the company deck. Start
+  with the game end card. Place it on the table where it is easily
+  visible for all players (somewhere next to the bank). Turn the face
+  with the lower cost of ownership (\$7) up.
+\item Sort the company cards by color and set aside the company with
+  the highest face value of each color. That is the CDG (60) for blue,
+  the E (43) for green, the DR (29) for yellow, the PR (19) for
+  orange, and the MHE (8) for red.
+\item Shuffle each remaining pile of companies of the same color.
+\item Without looking at them, draw a number of companies from each
+  pile that is equal to the number of players. \emph{Exceptions: With
+    4 players, draw 5 orange companies. With 5 players, draw 7 orange
+    companies. With 6 players, simply use all companies of all
+    colors.} Keep the drawn companies separated by color.
+\item Return the remaining companies to the box, again without looking
+  at them.
+\item Shuffle each of the set-aside companies into the pile of drawn
+  companies of the same color.
+\item Now build the deck by placing the blue companies on top of the
+  game end card, then the green companies on top of the blue
+  companies, then the yellow on top of green, then the orange on top
+  of yellow, and finally the red on top of orange.
+\item From the deck, draw and reveal a number of company cards equal
+  to the number of players. Place them next to the deck. These
+  companies are now in the \emph{offering}. They are all available for
+  auctions in the first turn of the game.
+\end{enumerate}
+
+You are all set to start the first turn of the game.
+
+\textbf{TODO: Add figure ``set up''.}
+
+\section{The first turn}
+
+Each turn runs through nine phases (although in some turns, nothing
+might happen in particular phases). Refer to the turn summary to get
+an overview. The right-most column of the turn summary indicates who
+makes decisions in a particular phase: \emph{PRIV} means that the
+players act as private investors. \emph{CORP} means that the players
+act as presidents of the corporations. (The president of a corporation
+is the player that currently holds the president's share of that
+corporation.) \emph{AUTO} means that no decisions are required. The
+game ``plays itself'' in those phases.
+
+\subsection{Phase 1 -- Investment}
+\label{t1p1}
+
+In current player order, starting with position 1, each player performs
+exactly one action. However, the player order is cyclic, so after the
+player last in player order has taken their action, loop back to
+player 1, who will now take exactly one action again. Proceed with
+player 2, and so on. Repeat this cycle until you meet the end
+condition described below.
+
+In turn 1, the only actions available are \emph{pass} and \emph{start
+  an auction}. (The share trading part of this phase is still missing
+in turn 1.)
+
+\emph{Pass} is a very simple action: If you take that action, you
+(basically) do nothing. As a reminder that your last action was
+\emph{pass}, you turn your player order card vertically. Passing does
+not prevent you from taking a different action next time you are up.
+If you take an action different from \emph{pass}, but you have passed
+before, turn your player order card back horizontally.
+
+If at any time during this phase, all player order cards are turned
+vertically, the phase immediately ends. In other words, the phase
+ends once all players have passed consecutively. Even if passing
+itself does not prevent you from taking another action next time you
+are up (see above), the phase might end before you have the
+opportunity to do so (which happens if everybody else passes, too).
+
+\emph{Start an auction} is the other possible action. If you take that
+action, you pick one of the companies available for auction. You place
+a bid at least as high as the face value of that company. If you don't
+have enough money to do so, or if there is no company available for
+auction, you cannot take this action. Once you have placed your bid,
+the next player in player order either raises the bid by at least \$1
+or leaves the auction. Then the next player does the same, and so
+on. Remember that the player order is cyclic, so after the last player
+in player order has raised the bid or left the auction, the player at
+position 1 is up to either raise the bid or leave the auction. This
+cycle continues until all players but one have left the auction.  The
+remaining player pays their bid to the bank and places the company
+card in front of them. A player's bid must not exceed the money the
+player owns (but it may exceed the price range printed on the company
+card as that range is only relevant for acquisitions in phase
+3). Players that have left the auction are skipped for the remainder
+of that auction. They are not allowed to re-enter that same auction.
+
+Once the auction is over, a new company card is drawn and placed
+face-up into the offering of companies. However, the newly drawn card
+is not available for auctions during the same phase it is drawn. Turn
+the company card vertically to mark it as unavailable. In the first
+few turns of the game, it is very common that at some point during
+this phase all the companies in the offering are not available for
+auctions so that players cannot start more auctions.
+
+The player that takes the next action after the auction is the one
+next in player order after the player who \emph{started the auction}
+(\emph{not} after the player who won the auction).
+
+\emph{Example of a complete auction: Alice, Bob, and Chris play a
+  three-player game. They have already reached turn 2. (The auctions
+  in turn 1 are less interesting, so this example is taken from turn
+  2. The rules are exactly the same.) The current player order is
+  Alice: 1, Bob: 2, Chris: 3. Alice has \$20, Bob \$12, Chris \$9. The
+  offering contains the MHE, the WT, and the MS. The WT has been
+  drawn this turn, so it is oriented vertically. Bob is up to pick an
+  action. He wants to start an auction. However, the WT is not
+  available for auctions, and the MS is too expensive (minimum bid is
+  \$17 but Bob has only \$12). The only company Bob could pick is the
+  MHE. He does so and decides to place an initial bid of \$9. \$8
+  would have been a legal bid, too, but Bob wanted to kick Chris out
+  of the auction from the start. Chris is next in player order but has
+  only \$9 so he cannot raise the bid and automatically leaves the
+  auction. Next is Alice. She has enough money to raise the bid. She
+  decides to raise the bid to \$11. Now it's back to Bob. He would
+  still be able to raise the bid to \$12 but he thinks that \$12 for
+  the MHE is a bit too much. Furthermore, if he leaves now, Alice has
+  won the auction and has to pay the \$11 she has bid. After that, she
+  won't have enough money to buy the MS, which she would have gotten
+  for face value otherwise because no other player would have had
+  enough money to overbid her. So Bob leaves the auction, Alice pays
+  \$11 and gets the MHE. A new company is drawn, the BD, which is
+  placed into the offering, but turned vertically. The auction is over
+  now, and the next player to take an action is Chris (because he is
+  next in player order after Bob, who started the auction). Chris
+  doesn't have enough money to start an auction. So he has to pass and
+  turns his player order card vertically. In fact, the only company
+  available for auctions is the MS, and none of the players have enough
+  money left to bid for it, so all players have to pass, and the phase
+  ends.}
+
+\subsection{Phase 2 -- Wrap-up}
+
+Redistribute player order cards according to remaining cash on
+hand. The player with the most cash left gets position 1, and so
+on. Break ties using the old player order. (In practice, you should
+first check if there are any ties, break them according to the current
+distribution of player order cards, and only then start to
+redistribute the player order cards.)
+
+\emph{Example (continuing the example above): After
+  the end of phase 3, both Alice and Chris have \$9 left. Bob has \$12
+  left. So Bob will be on position 1 in the new player order. Alice
+  and Chris tie for position 2. Since Alice was before Chris in the
+  old player order (1 vs. 3), she gets position 2, and Chris keeps
+  position 3.}
+
+If there are any companies left that are available for auction, the
+foreign investor tries to buy them for face value directly (no auction
+triggered), starting with the company with the lowest face value and
+then continuing in ascending face value order. If the foreign investor
+has enough money for the company with the lowest face value, it pays
+it to the bank and adds the company to its assets. (Place the company
+below the foreign investor card. If the foreign investor already owns
+companies, line them up in a horizontal row.) Then repeat with the
+company with the next lowest face value, and so on, until the foreign
+investor doesn't have enough money left.
+
+Whenever the foreign investor buys a company, draw a new one from the
+deck as if that company had been purchased in an auction.
+
+Usually, it takes a few turns before the foreign investor manages to
+buy a company. In practice, it is very rare that it buys more than one
+company in one turn.
+
+After the foreign investor is done, turn all companies in the offering
+horizontally, so that they are available for auctions in phase 1 of the
+next turn.
+
+\subsection{Phase 3 -- Acquisition}
+
+As there are no corporations in the game yet, nothing happens in this
+phase.
+
+\subsection{Phase 4 -- Closing}
+
+In principle, you could close your freshly bought companies already,
+but it really wouldn't make any sense. So ignore this phase for now.
+
+\subsection{Phase 5 -- Income}
+
+The bank pays income to all players and to the foreign investor. Each
+player adds the income of all their companies and collects the result
+from the bank. (The income of each company is printed in the circle in
+the upper right corner of the company card.)
+
+The foreign investor does the same, but always earns an additional
++\$5 bonus, regardless of owning any companies (see the circle in the
+upper right corner of the foreign investor card). Add the foreign
+investor's income to its treasury to the right of the foreign investor
+card.
+
+\subsection{Phase 6 -- Dividends}
+
+Only corporations pay dividends. As you probably have guessed by now,
+there are no corporations yet, so nothing happens.
+
+\subsection{Phase 7 -- End card}
+
+Only once we approach the end of the game, something will happen in
+this phase. Ignore it for now.
+
+\subsection{Phase 8 -- Issue shares}
+
+We are nearly there, but at the moment, we still have no corporations
+in the game. So once again, nothing to see here.
+
+\subsection{Phase 9 -- IPO}
+
+Players that own private companies can decide to go public with one or
+more of them, i.\,e. convert them into \emph{corporations}. Only
+companies owned by players can be converted into corporations (but not
+companies owned by the foreign investor or by already existing
+corporations). In descending face value order, the owners of the
+eligible companies decide if they want to go public or not. If they go
+public, the whole procedure is completed for that company before the
+owner of the next company decides.
+
+\emph{Example: Alice owns the MS (face value \$17) and the KME
+  (\$5). Bob owns the WT (\$11) and the BPM (\$7). Chris owns the BSE
+  (\$2). The first company that may go public is the MS. Alice has to
+  decide first, and cannot revise her decision later during the same
+  phase. Once she has decided if the MS goes public (and if so, has
+  performed the required procedure), Bob decides for the WT and then
+  for the BPM. After that, Alice decides for the KME, and finally
+  Chris decides for the BSE.}
+
+The conversion procedure is the following:
+\begin{enumerate}
+\item Pick one of the symbol cards that is currently not in
+  use. Together with the pile of shares on top, place it a bit away
+  from your personal assets (it's going to be a \emph{public} company
+  after all) but still in your reach. (In the unlikely case that there
+  is no unused symbol card available, your company cannot be
+  converted. Sorry.) Note that each corporation has a different
+  special ability, and a varying amount of shares to issue (from four
+  to seven). We'll cover the special abilities later, when they become
+  relevant.
+\item Place the company that is being converted below the symbol card.
+\item From the share price cards that are currently not in use, choose
+  an eligible starting price for your corporation. The eligible share
+  price cards are those that feature the color of the company being
+  converted in their IPO box. Place the chosen share price card left
+  of the symbol card. (That will leave an empty spot in the row of
+  share price cards. Leave it alone, don't move the other share price
+  cards to close the gap.) The share price card determines the current
+  value of each share of the corporation.  In turn 2, all privately
+  owned companies are red, so the allowed starting share prices are
+  \$10, \$11, \$12, \$13, and \$14. However, in later turns, players
+  will own differently colored companies, too, which changes the range
+  of eligible starting share prices for those companies. (It is even
+  possible that all eligible share price cards are in use by other
+  corporations. In that case, your company cannot be
+  converted. Sorry.)
+\item Now take the first share from the stack of shares (which is the
+  golden president's share) and place it in front of you. That's now
+  your share, which you got in exchange for the company you went
+  public with.
+\item As the share you have received has a higher share price than the
+  face value of the company you went public with, you have to pay the
+  difference from your private money into the treasury of the
+  corporation. Place the money to the right of the share price
+  card. (If you don't have enough money to pay the difference, the
+  whole procedure is void and has to be undone. If possible, you can
+  choose a lower share price so that you have enough money to pay the
+  difference between share price and face value of your company. But
+  if not, you cannot convert your company. Sorry once more.)
+\item The whole point of going public is to get public investors. So
+  next, you place the second share from the stack into the bank. In
+  return, the bank pays the share price into the treasury of the
+  corporation. (This step is mandatory. You cannot opt to not give a
+  share to the bank.)
+\end{enumerate}
+
+\textbf{TODO: Add figure illustrating the example below.}
+
+\emph{Example: You go public with the MHE (\$8 face value). You pick
+  the ``Jupiter'' corporation (which has a special ability that is
+  especially helpful for the early red companies, we'll get to that
+  later).  As starting share price, you choose \$11. You have to pay
+  \$3 into the treasury of your newly formed corporation. You receive
+  the president's share of the Jupiter in return. The bank receives the
+  second Jupiter share and pays \$11 into the treasury of the
+  corporation. Arrange all involved components as shown in the figure
+  above. The Jupiter corporation consists of the \$11 share price card,
+  the Jupiter symbol card with the two remaining shares in the central
+  box, the company card of the MHE, and \$14 cash in its treasury.}
+
+\section{The second turn}
+
+Congratulations. You have finished your first turn. The second turn is
+going to become a bit more interesting. Some of the phases won't be
+ignored any longer, and others get more complex.
+
+\subsection{Phase 1 -- Investment}
+
+This phase works the same as in turn 1, but now we will add share
+trading to the mix. There are two more possible actions to chose from:
+\emph{buy one share} and \emph{sell one share}.
+
+Only shares owned by the bank can be bought. (The pile of shares on
+top of the symbol cards cannot be touched in this phase.) If you choose
+the \emph{buy one share} action, perform the following steps:
+\begin{enumerate}
+\item Take the desired share from the bank and place it in front of you.
+\item Return the share price card of the corresponding corporation to
+  its place in the row of share price cards and replace it by the next
+  higher available share price card. (Usually, that is the next higher
+  card as marked by the single arrow in the upper right corner of the
+  share price card. \textbf{TODO: Adjust to actual card design.}
+  However, if that share price card is in use, you will skip it. It is
+  even possible that many consecutive share price cards are used and
+  the share price of the share you are currently buying jumps up a
+  lot.)
+\item Now pay the \emph{new} share price to the bank. (If you don't
+  have enough money to do so, the whole action is void. Undo
+  everything, and try something else.)
+\end{enumerate}
+
+Now re-read the last item in that list and think about the
+consequences. Like in real share trading, the displayed share price of
+a corporation is not the price you have to pay if you want to buy one
+of the shares. It is more like the ``last known share price''. By
+buying a share, you are already modifying the system, and you have to
+pay more than that ``last known share price''.
+
+After you have bought a share of a corporation you are not the
+president of, check if you now own more shares of that corporation
+than the current president. If that is the case, you have managed
+something like a hostile takeover. \emph{You} are now the president of
+that corporation. Exchange the golden president's share with any one
+of your shares of the same corporation. (Shares are basically
+all the same. The numbering only matters as long as they are
+still on the stack on top of the symbol card. The golden president's
+share, however, is used as a marker for the current
+president. In all other regards, it's a perfectly normal share.)
+
+If you choose the \emph{sell one share} action, perform the following
+steps:
+\begin{enumerate}
+\item Choose one of your shares to sell and place it into the
+  bank. (Only choose the golden president's share if it is the last
+  share you own of that corporation.)
+\item Return the share price card of the corresponding corporation to
+  its place in the row of share price cards and replace it by the next
+  lower available share price card. (Usually, that is the next lower
+  card as marked by the single arrow in the upper left corner of the
+  share price card. \textbf{TODO: Adjust to actual card design.}
+  However, as before, you will skip missing share price cards.)
+\item Now the bank pays you the \emph{new} share price.
+\end{enumerate}
+
+Similar to the situation when buying a share, the displayed share
+price is not the price you get paid. Like buying, selling a share
+modifies the system, so you get less money for a share than its ``last
+known value''.
+
+Another similarity is that a change of presidency might occur after
+the transaction: If you are the current president, and you have sold a
+share, you have to check if now another player (\emph{not} the bank)
+owns more shares of that corporation than you. That player exchanges
+one of their shares of that corporation with the golden president's
+share (which might still be owned by you, or it is owned by the bank
+if you have just sold it as your last share of that corporation). In
+the case where more than one player is tied for the most shares, the
+player that is following you closer in player order becomes the
+president.
+
+\emph{Example: The player order is Chris: 1, Alice: 2, Bob: 3. The
+  ``Eagle'' corporation has currently three shares issued.  (That
+  cannot be the case in turn 2, only in later turns, you'll see.)
+  Alice is the president and owns the golden president's share. Chris
+  and Bob own each one of the other two shares. It's Alice's turn to
+  take one action. She decides to sell one ``Eagle'' share, following
+  the procedure above. After that, both, Chris and Bob own more shares
+  each than Alice. As they are tied, the player order decides who
+  becomes the new president. Alice is followed by Bob, and Bob is
+  followed by Chris (remember, the player order is cyclic, the last
+  player is followed by the first). So Bob is following Alice closer
+  than Chris and becomes the new president. He takes the president's
+  share from the bank and places his own share into the bank in
+  exchange. Now Bob owns the president's share, and Chris and the bank
+  own one share each. Alice no longer owns an ``Eagle'' share.}
+
+But what happens if you, as the president, sell your last share (the
+golden president's share), and \emph{no other player} owns any shares
+of the corporation? Or in other words: What happens if the bank owns
+\emph{all} issued shares of a corporation? In that special case, the
+corporation goes \emph{into receivership}, which we'll cover in its
+own section~\ref{rec} below.
+
+\subsection{Phase 2 -- Wrap-up}
+
+This phase works exactly the same as in turn 1.
+
+\subsection{Phase 3 -- Acquisition}
+
+In this phase, corporations may buy companies. Only corporations may
+buy, but they may buy from anybody: players, the foreign investor, and
+even other corporations (but not from the offering of companies
+available for auctions -- those are indeed only available for players
+in phase 1, and for the foreign investor in phase 2). In phase 3,
+players and the foreign investor only \emph{sell} companies, never
+buy.
+
+This is the first time where the presidency of a corporation becomes
+relevant. The president of a corporation decides on behalf of the
+corporation. It might easily happen that both sides of a deal are
+actually controlled by the same player. If you (as a player) own a
+company and you are at the same time the president of a corporation,
+there is nothing wrong if you (as a player) agree with yourself (as
+the president of the corporation) that the corporation will buy your
+company for a price you agree on with yourself.
+
+In every single transaction, exactly one company is bought. Buyer and
+seller have to agree on a price within the price span printed on the
+company card. (This price span is inclusive, e.\,g. the allowed prices
+for the KME (\$5 face value) are \$3, \$4, \$5, \$6, and \$7.) The
+buying corporation must be able to pay the price from its
+treasury. (You cannot pay with other means, or buy ``bundles''. It's
+always one company for an allowed amount of cash.)
+
+Any number of transactions might happen during the phase, in any
+desired order, even concurrently. Think of a marketplace. Buyers and
+sellers find each other at will, by announcing their offers to
+whomever they want, negotiating in all directions. And once a buyer
+and a seller agree on a deal, they make it happen. The phase goes on
+until no transactions are happening any longer. There are some
+restrictions, though:
+\begin{itemize}
+\item Every \$ and every company may only be part of one single
+  transaction in the whole phase. The money that has been paid is
+  turned vertically, as well as the company that has been handed over,
+  to mark those components as ``in flight''. They cannot be part of
+  another transaction in the same phase. Once the phase is over, you
+  can turn them all horizontally again. They have ``arrived'' by then
+  and can be used normally. (If you use poker chips, you'll find it
+  hard to recognize chips that have been ``turned
+  vertically''. Instead, place the chips used in a transaction on top
+  of the stack of unissued shares.)
+\item At any time, each corporation must own at least one subsidiary
+  company. You can never completely ``empty'' a corporation. This one
+  company might very well be a company turned vertically, i.\,e. a
+  corporation that owns only one subsidiary company in the beginning
+  of the phase could first buy another company (which is thereby turned
+  vertically) and then sell the company it originally owned. There is
+  no hierarchy of subsidiary companies within a corporations. The
+  company a corporation owned when it was formed has no special
+  status within the corporation.
+\end{itemize}
+
+A special case is the foreign investor, as nobody controls it and its
+decisions. The foreign investor will happily sell any company it owns,
+but only for the maximum allowed price. The money it receives if it
+sells a company goes into its treasury and is available to be used in
+phase 2 of later turns. There might still be an ambiguous situation if
+more than one corporation want to buy the same company from the
+foreign investor. In that case, the corporation with the higher share
+price card has priority. In practice, whenever a corporation wants to
+buy a company from the foreign investor, its president has to announce
+the intention. At that time, pause the game for a short while and ask
+each president of a corporation with a higher share price if they want
+to intervene and buy that company immediately themself. If more than
+one corporation wants to intervene, again the one with higher share
+price has priority. If no corporation intervenes, the announcing
+corporation \emph{must} now buy the company (i.\,e. no fake
+announcements allowed).
+
+\textbf{TODO: Perhaps put this paragraph in its own box with
+  corporation's logo.} The special ability of the Orion corporation
+affects the interaction with the foreign invester. Orion always has
+first priority (as if its share price is higher than any other), and
+Orion only pays \emph{face value} rather than the maximum allowed
+price.
+
+\subsection{Phase 4 -- Closing}
+
+As in turn 1, it rarely makes sense to close companies so
+early in the game. Keep ignoring this phase.
+
+\subsection{Phase 5 -- Income}
+\label{t2p5}
+
+For players and the foreign investor, this phase works exactly the
+same as in turn 1. The new thing is that corporations, too, collect
+income.
+
+Their base income is calculated in the same way as for players and the
+foreign investor: Just add up all the income of the individual
+subsidiary companies of a corporation. However, corporations (and only
+corporations!) have the ability to generate bonus income from
+\emph{synergies}:
+
+A pair of companies that are subsidiaries of the same corporation and
+have each other's abbreviation printed in one of their synergy boxes,
+generates the bonus income printed in the upper left corner of the
+synergy box. All pairs you can find within a corporation generate
+bonus income, but each pair generates the bonus only once. Use synergy
+markers to track the bonuses. For each pair, place a corresponding
+synergy marker on the company card of the company with the higher face
+value. Place it on top of the abbreviation of the other
+company. (There is a bold red or yellow line in each synergy box. You
+will see that the markers are only placed \emph{in front of} that
+line, never behind. Never place markers behind the line (on the
+abbreviations of companies with higher face value) to avoid
+double-counting of bonuses.) To easily find all existing pairs, sort
+the companies in descending face value order from left to right. Then
+start with the left-most company and check all the companies listed in
+its synergy boxes until you hit the bold line. No need to check behind
+the line. Then repeat the procedure with the second left-most company
+etc. You only ever have to look to the right. The companies left of
+the one you are checking have already been checked. So you have to
+look at fewer and fewer companies. The right-most company will never
+receive a synergy token.
+
+Certain corporations have special abilities to generate additional
+bonus income.
+
+\textbf{TODO: Perhaps put this paragraph in its own box with
+  corporation's logo.} The Jupiter corporation receives +1\$ for each
+company it owns.
+
+\textbf{TODO: Perhaps put this paragraph in its own box with
+  corporation's logo.} The Saturn corporation doubles the printed
+income of its best company.
+
+\textbf{TODO: Perhaps put this paragraph in its own box with
+  corporation's logo.} The Horse corporation receives +1\$ for every
+two synergy markers it owns (rounded down).
+
+The bank pays the total income of a corporation (base income plus
+synergy bonuses) into its treasury. For large corporations, it makes
+sense to track the income on a sheet of paper so that you don't have
+to calculate the total income again each turn.
+
+\textbf{TODO: Add figure illustrating the example below.}
+
+\emph{Example: The Horse corporation in the figure above consists of
+  the DSB, the MS, the BPM, and the BSE. Its base income is \$5 + \$3
+  + \$2 + \$1 = \$11. The DSB pairs with the MS, yielding +\$2. The MS
+  pairs with both, the BPM and the BSE, for +\$1 each. Finally, the
+  BPM pairs with the BSE for +\$1. The synergies add up to +\$5 (note
+  the synergy markers). Finally, the special ability grants another
+  +\$2 income for four synergy markers. Thus, the total income is \$11
+  + \$5 + \$2 = \$18.}
+
+\emph{You can see here how the synergies model a network: Both the BPM
+  and the BSE historically started in Berlin. The MS is the state
+  railroad of Mecklenburg, a German state north of and not far from
+  Berlin. So it connects to the two Berliner railroad companies. The
+  DSB, in turn, is the state railroad of Denmark, which is north of
+  Germany, and relatively close to Mecklenburg. So MS and DSB can
+  connect their networks for mutual benefit. The Horse corporation has
+  developed into an international northern European railroad trust.}
+\columnbreak
+
+
+\subsection{Phase 6 -- Dividends}
+\label{t2p6}
+
+Starting with the corporation with the highest share price card, and
+then continuing in descending share price order, each corporation pays
+a dividend (which is chosen by the president and can be as low as \$0)
+and then adjusts its share price.
+
+For each corporation, the president performs the following steps:
+\begin{enumerate}
+\item The top card of the stack of shares on your symbol card (or the
+  symbol card itself if all stacks have been issued) tells you how
+  many shares you have issued. You will have to pay dividends to each
+  of those shares. So keep that number in mind.
+\item On your share price card, you see the maximum possible dividend
+  per share. Obviously, the corporation's treasury must have enough
+  money to pay the dividends. If you have three shares issued and \$8
+  in the treasury, the maximum dividend per share is \$2, even if the
+  share price card allows more. The minimum dividend is \$0 (you can
+  call that ``not paying a dividend'', it doesn't make a
+  difference). Pick a dividend in this range, and pay it from the
+  corporation's treasury to the owner of each share (which might be
+  yourself (this time as a player, not a president), another player,
+  or the bank).
+\item Now count the ``stars'' of the corporation: Add the
+  number of stars you see on each company card owned by the
+  corporation. Every full \$10 in cash adds another
+  star. \textbf{TODO: Replace the word \emph{star} by the star symbol?
+    If play money exists, mention the star symbol on the notes, and
+    that smaller change still provides a star for each \$10 it ads up to.}
+\item Take your share price card and look at the bottom half. Find the
+  number of stars corresponding to the number of issued shares and
+  compare it to the number of stars you have just counted to find your
+  new share price card. If the two numbers are equal, nothing happens
+  and you keep your old share price card. If you have counted one
+  fewer star than printed on the share price card, your new share
+  price card is ``one down'', i.e. it is the share price next to the
+  single left arrow in the upper left corner of the share price
+  card. Correspondingly, if you have counted one more star than
+  printed on the share price card, your new share price card is ``one
+  up'', i.e. it is the share price next to the single right arrow in
+  the upper right corner of the share price card. If you have counted
+  two \emph{or more} stars fewer or more than printed on the share
+  price card, your new share price is ``double down'' or ``double
+  up'', respectively, i.e. it is the share price next to the
+  corresponding double arrow in the upper left or right corner,
+  respectively. Return your old share price card to its spot in the
+  row of share price cards and take your new share price card from the
+  row. If your new share price card is currently in use by another
+  corporation, find the next available share price card in the
+  direction of the arrow.
+\item Turn your new share price card vertically (to mark that you have
+  gone through this whole procedure). Should you have kept your old
+  share price card, still turn it vertically.
+\end{enumerate}
+
+\textbf{TODO: Add figure illustrating the example below.}
+
+\emph{Example: Imagine the same corporation as in the previous example
+  (section \ref{t2p5}). It has three shares issued, a current share
+  price of \$22, and after paying dividends, it has \$21 left in
+  treasury. Its ``star count'' is therefore 3 (for the DSB) + 2 (for
+  the MS) + 1 (for the BPM) + 1 (for the BSE) + 2 ( for \$21 cash) =
+  9. With three shares issued, the share price card asks for 7
+  stars. Since you have counted two more, the new share price is \$27,
+  as marked in the upper right corner next to the double arrow. If the
+  \$27 share price card is not available, the next higher available
+  share price card must be taken. Note that the location of the \$24
+  share price card doesn't matter here. A ``double up'' doesn't mean
+  to go up two available share price cards. Always find the target
+  share price first, and then start to ``leapfrog'' up or down from
+  there on. (If the corporation had only \$2 less cash, its star count
+  would be 8, and the new share price would be only \$24. If the
+  corporations had less than \$10 cash, its star count would be only
+  7, and the share price would stay the same.)}
+
+\textbf{TODO: Perhaps put this paragraph in its own box with
+  corporation's logo.} The Star corporation alway adds two additional
+stars to its star count.
+
+\subsection{Phase 7 -- End card}
+
+We are still not close enough to the end of the game to make anything
+happen in this phase. Keep ignoring it.
+
+\subsection{Phase 8 -- Issue shares}
+\label{t2p8}
+
+Finally, corporations have the opportunity to issue new shares. After
+going public, this is the only phase where the stack of shares on the
+symbol card is touched and more shares enter the market.
+
+Again in decreasing share price order (starting with the corporation
+with the highest share price card), the president of each corporation
+decides if the corporation issues one share or no share. (A
+corporation cannot issue more than one share in this phase.) In any
+case, the share price card is turned horizontally to mark that the
+corporation already had the opportunity to issue a share.
+
+Issuing a share works very similarly to selling a share. Perform the
+following steps for the corporation that issues a share:
+\begin{enumerate}
+\item Place the top-most share from the pile of unissued shares on the
+  corporation's symbol card into the bank. (If there are no shares
+  left, i.\,e. all shares have already been issued, you cannot
+  issue more shares. Sorry.)
+\item Return the corporation's share price card to its place in the
+  row of share price cards and replace it with the next lower
+  available share price card. (Usually, that is the next lower card as
+  marked by the single arrow in the upper left corner of the share
+  price card. \textbf{TODO: Adjust to actual card design.}  However,
+  as before, you will skip missing share price cards.)
+\item Now the bank pays the \emph{new} share price into the
+  corporation's treasury.
+\end{enumerate}
+
+Later in the game, it is possible that the share price card the
+corporation has to take is the \$0 one. In that case, the corporation
+is declared bankrupt and removed from the game. Follow the
+instructions on the \$0 share price card. Note that shares and symbol
+cards are ``recycled'', i.\,e. they may later be used to form new
+corporations. However, the ``recycled'' shares have nothing to do with
+the old bankrupt corporation. The bankrupt corporation is gone for
+good, without compensation.
+
+\textbf{TODO: Perhaps put this paragraph in its own box with
+  corporation's logo.} When the Eagle corporation issues a share, its
+share price does not change. It simply receives the current share
+price from the bank after placing a share into the bank pool.
+
+\subsection{Phase 9 -- IPO}
+
+In general, this phase works the same as in turn 1. However, with the
+more valuable companies that have entered the game by now, you will
+sooner or later go public with a company whose face value matches or
+even exceeds the initial share price. In case the share price matches
+the face value, you simply don't have to pay anything into the
+corporation's treasury. The share you get has precisely the value of
+the company you have given up, so you are all set. But what if the
+share price is lower than the face value of the company going public?
+Very simple: Take \emph{two} shares rather than one. Start with the
+president's share, and then take an additional share. After that, pay
+the difference between the \emph{doubled share price} and the face
+value of the company into the treasury of the corporation as usual. In
+this case, you also put two shares into the bank pool. Of course, the
+bank now pays twice the share price into the corporation's
+treasury. You always end up with half of the issued shares in your
+possession and the the other half in the bank.
+
+\emph{Example 1: You go public with the BY (face value \$12). You
+  choose a share price of \$12. You receive one share (the president's
+  share) and pay nothing. The bank gets another share and pays \$12
+  into the treasury of the new corporation. The corporation ends up
+  with two shares issued and \$12 in its treasury.}
+
+\emph{Example 2: You go public with the BY (face value \$12). You
+  choose a share price of \$11. You take the president's share, but
+  its value is not sufficient to match the face value of the BD. So
+  you take another share. Now you have two shares with a total value
+  of \$22. You pay \$10 from your cash into the treasury of the new
+  corporation. The bank gets two shares, too, and pays \$22 into the
+  treasury. The corporation ends up with four shares issued and \$32
+  in its treasury.}
+
+\emph{Example 3: You go public with the CDG (face value \$60). You
+  choose a share price of \$30 (a share price that is only allowed for
+  green and blue companies, but fortunately the CDG is a blue
+  company). You take two shares. Their value matches the face value of
+  the CDG, so you don't have to pay anything. The bank gets two shares,
+  too, and pays \$60. The corporation ends up with four shares issued
+  and \$60 in its treasury.}
+
+\section{The remaining turns}
+
+We are almost there. You only have to learn a few more things, which
+only become relevant later in the game.
+
+\subsection{Phase 1 -- Investment}
+\label{t3p1}
+
+Nothing really changes here compared to previous turns. However, we
+have to deal with a few special cases:
+\begin{itemize}
+\item After selling a share, the new share price might be \$0. In that
+  case, the corporation is bankrupt and the same procedure is
+  triggered as described in section \ref{t2p8}.
+\item After buying a share, the new share price might be \$75. In
+  that case, the game ends after the buy action has been completed
+  (i.\,e. you still have to pay the \$75 for the share you have just
+  bought, but after that, the game is over). Read on in section
+  \ref{win} to learn how to determine the winner.
+\item Eventually, the deck of companies will run out. The last card in
+  the deck is the game end card. It is never drawn and just stays
+  where it is. If you cannot draw a company after an
+  auction, just skip that step. The offering will contain one fewer
+  company whenever that happens.
+\item Eventually, there will be no companies left in the
+  offering. From that point on, the action \emph{start an auction}
+  cannot be chosen any longer.
+\end{itemize}
+
+\subsection{Phase 2 -- Wrap-up}
+
+This phase works exactly the same as in previous turns throughout the
+game.
+
+For convenience, you can stop tracking the money of the foreign
+investor once there are no companies in the offering anymore.
+
+\subsection{Phase 3 -- Acquisition}
+
+This phase works exactly the same as in turn 2 throughout the game.
+
+\subsection{Phase 4 -- Closing}
+\label{t3p4}
+
+As you will see in the next section, later in the game, a \emph{cost
+  of ownership} will apply to certain companies. You might find
+yourself (or your corporation) in a situation where you want to get
+rid of one or more companies. In this phase, you can remove any number
+of your privately owned companies from the game. Essentially, you can
+do the same for the companies owned by corporations you
+control. However, a corporation has to retain at least one subsidiary
+company at any time.
+
+If your total income from your privately owned companies in the
+following phase 5 (see section \ref{t3p5}) will be negative and you
+don't have enough money to pay for it, you \emph{must} close enough
+companies in this phase to be able to pay for your losses (or get rid
+of the losses altogether). In other words: As a player, you cannot
+drive yourself into bankruptcy.
+
+As in phase 3, the players act in no particular order. They simply
+close companies as they see fit, and once nobody wishes to close a
+company any longer, the phase ends.
+
+The foreign investor automatically closes any companies with a
+negative income (to be vetted separately for each company).
+
+\textbf{TODO: Perhaps put this paragraph in its own box with
+  corporation's logo.} Whenever the Ship corporation closes a company,
+it immediately receives twice the printed income of that company as a
+scrapping bonus.
+
+\subsection{Phase 5 -- Income}
+\label{t3p5}
+
+The income calculation works the same as before, but at some point in
+the game, you will have to deduct a \emph{cost of ownership}. Refer to
+the back of the top-most card of the deck of (not yet drawn)
+companies. Starting with the green cards, it will show a central
+rectangle with a cost of ownership. Each company matching any of the
+colors in the rectangle suffers the cost of ownership printed on the
+card, i.\,e. its income is reduced, possibly becoming negative. Each
+player and each corporation first add up the income of all their
+companies, and only then they receive or pay the total income (if it
+is positive or negative, respectively). A player will always be able
+to pay their negative income (because they were required to close
+companies to make sure of that, see section \ref{t3p4}). However, a
+corporation might not be able to pay its negative income. In that
+case, it goes bankrupt. Treat it the same as if it has just reached
+share price \$0 (see section \ref{t2p8}).
+
+Once all company cards have been drawn from the deck, the game end
+card is visible. With regard to cost of ownership, it is treated the
+same as the central rectangle on the company cards.
+
+\textbf{TODO: Add figure illustrating the example below.}
+
+\emph{Example: Look at the same corporation as used in the example in
+  section \ref{t2p5}. We calculated an income of \$18. That was
+  without cost of ownership yet. If the top face-down card of the deck
+  is a green one (see figure above), each red company has a cost of
+  ownership of \$2. Our corporation would earn \$2 less per red
+  company it owns. So it would earn \$4 less, its income would be
+  \$14. Once the top-most company of the deck is a blue one, each red
+  and orange company earns \$4 less. The Horse would only earn \$18 --
+  3*\$4 = \$6. Its president might be tempted to close the two red
+  companies. Let's do the math: After that, the Horse would only own
+  the DSB and the MS. That's \$5 + \$3 base income, \$2 for the
+  synergy between the two, nothing anymore for the Horse's special
+  ability (only one marker doesn't make a dent), and finally a
+  deduction of \$4 cost of ownership for the orange MS. Again, we
+  arrive at \$6 total income. Since closing the red companies reduces
+  the star count of the Horse, it's usually a better deal to not close
+  them yet.}
+
+\textbf{TODO: Add figure game-end-card front.}
+
+\emph{Once all companies have been drawn, the front-side of the game
+  ending card is visible (see figure above). From now on, each yellow,
+  orange, and red company has a cost of ownership of \$7. Our Horse
+  corporation would earn 4*\$7 = \$28 less than the unmodified
+  income. In total, it now makes \$10 losses. Even if it closed all
+  but the best company (DSB), it would still make \$2 losses per
+  turn.}
+
+\textbf{TODO: Add figure game-end-card back.}
+
+\emph{In the last turn of the game (see section \ref{t3p7} below),
+  the game end card will be flipped, and the cost of ownership will
+  not only be much higher, it will even affect green companies. (Luckily,
+  it will only last one turn.)}
+
+\textbf{TODO: Perhaps put this paragraph in its own box with
+  corporation's logo.} The Bear corporation reduces its cost of
+ownership by up to \$10 (but not below \$0).
+
+\subsection{Phase 6 -- Dividends}
+
+Once more, nothing really changes here compared to previous turns, but
+eventually, you might run into one of the following special cases:
+\begin{itemize}
+\item After adjusting the share price, the new share price might be
+  \$0. In that case, the corporation goes bankrupt and the same
+  procedure is triggered as described in section \ref{t2p8}. (Note
+  that paying dividends happens first. It's perfectly legal to pay a
+  dividend only to drop to \$0 and go bankrupt right after that.)
+\item After adjusting the share price, the new share price might be
+  \$75. In that case, the game does \emph{not} end immediately. The
+  phase continues, and only in the subsequent phase 7 the game will be
+  declared over. Should it happen that other corporations reach \$75,
+  too, those companies don't take a new share price card. They only
+  return their old one. The shares of a corporation without a share
+  price card have a share price of \$75.
+\end{itemize}
+
+\subsection{Phase 7 -- End card}
+\label{t3p7}
+
+Eventually, something will happen in this phase.
+
+First you have to check if the \$75 share price card is held by a
+company. If so, the game ends immediately. Read on in
+section~\ref{win} to learn how to determine the winner.
+
+If the \$75 share price card is not in use, check if there are still
+companies available for auctions in the offering. If not, flip the
+game end card (which will increase the cost of ownership). Once you
+reach phase 7 again, the game ends. (In other words: If at the start
+of phase 7, the game end card is already flipped, the game ends in the
+same way as if the \$75 share price card were in use.) Again,
+section~\ref{win} tells you how to determine the winner.
+
+While the game end card is flipped (i.\,e. during the last turn of the
+game), the game might still end in phase 1 as described in section
+\ref{t3p1}.
+
+\subsection{Phase 8 -- Issue shares}
+
+This phase works exactly the same as in previous turns throughout the
+game.
+
+\subsection{Phase 9 -- IPO}
+
+This phase works exactly the same as in previous turns throughout the
+game.
+
+\section{Receivership}
+\label{rec}
+
+\textbf{TODO: Put this into a box rather than a section?}
+
+For as long as all issued shares of a corporation are owned by the
+bank, that corporation is \emph{in receivership}. As a reminder, place
+one of the red receivership cards next to the corporation's
+assets. The card also lists the rules that now apply to the
+corporation. Essentially, the corporation is now run by a receiver
+(who is not always acting very smart). The rules in a bit more detail
+than on the receivership card:
+\begin{description}
+\item[Phase 1:] The first player that buys a share of an corporation
+  in receivership must pick the golden president's share and
+  immediately becomes the new president, thereby ending receivership.
+\item[Phase 3:] Corporations in receivership are very eager to buy
+  from the foreign investor. However, in most cases, they don't have
+  enough cash. In practical terms, you should check at the beginning
+  of phase 3 if any corporation in receivership is able to buy a
+  company from the foreign investor at all. If that's the case, start
+  with the most expensive eligible company and pretend that the
+  receiver has just announced the intention to buy the company. Then
+  follow the usual rules of intervention and priorities (including the
+  special ability of the Orion corporation). Repeat with the less
+  expensive companies until no companies are eligible anymore.
+\item[Phase 4:] Similar to the foreign investor, the receiver tries to
+  close companies that make losses. However, since synergies might be
+  generated by corporations, even in receivership, only close red
+  companies if the cost of ownership is at least \$4 per company, and
+  only close orange companies if the cost of ownership is at least \$7
+  per company. Never close yellow, green, or blue companies. If the
+  corporation needed to close \emph{all} its companies, keep the one
+  with the highest face value. (Note that this rule won't always do
+  the ``right'' thing. Companies might be closet that are still
+  profitable, and unprofitable companies might stay open. As said, the
+  receiver is not very smart.)
+\item[Phase 5:] A corporation in receivership may go bankrupt as
+  normal if it cannot pay for its negative income.
+\item[Phase 6:] The dividend of a corporation in receivership is
+  always \$0.
+\item[Phase 8:] A corporation in receivership will always issue a
+  share if at all possible, even if it goes bankrupt by doing so.
+\end{description}
+
+\section{How the game ends}
+\label{end}
+
+As described above, there are three ways the game may end:
+\begin{itemize}
+\item If a corporation takes the \$75 share price card during a
+  \emph{buy one share} action in phase 1, the game ends immediately
+  after that action is completed.
+\item If the \$75 share price card is in use during phase 7, the
+  game ends.
+\item If phase 7 starts with the game end card already flipped, the
+  game ends.
+\end{itemize}
+
+\section{Who has won?}
+\label{win}
+
+For the final ranking of players, add the value of everything each
+player owns:
+\begin{itemize}
+\item Their cash.
+\item The face value of each private company they own.
+\item The current share price of each share they own.
+\end{itemize}
+
+For the final player ranking, it is irrelevant how much cash and which
+companies the corporations own.
+
+If there is a tie, break it by player order (lower number in player
+order wins over higher number).
+
+\section{Easily missed or misunderstood rules}
+
+The following list of things beginners often get wrong might prove
+helpful in your first couple of games. It is in approximate order of
+frequency, most common issues first.
+
+\begin{itemize}
+\item Synergies are only possible within a corporation. Companies
+  owned directly by a player or by the foreign investor never ever
+  receive synergy bonuses. When counting synergies, count every pair
+  only once. If A synergizes with B, then B will always synergize with
+  A, too. You still get the bonus only once.
+\item \emph{Pass} and \emph{leaving an auction} both happen during
+  phase 1, but are entirely different things. \emph{Pass} is an action
+  you may take when it's your turn to perform one action. If you do
+  that, you basically do nothing. If all players pass
+  consecutively, phase 1 is over. But if any of the others take a
+  non-pass action, you will have another turn, and when it's your turn
+  again, you may (and must) choose a new action (which might be
+  \emph{pass} again, but any other legal action is eligible, too). In
+  other words: Passing doesn't prevent you from taking another action
+  later. In contrast, if you \emph{leave an auction}, you have left
+  the auction for good. You may not bid in the same auction ever
+  again. Strictly speaking, \emph{leaving an auction} is not an action
+  at all. It happens as a sub-step during an auction, which is
+  triggered by any player's \emph{start an auction} action.
+\item After an auction, keep in mind that the last player that has
+  performed an action is the player that has \emph{started} the
+  auction (\emph{not} the player that has won the auction). So the
+  next player performing an action will be the one next in player
+  order to the player that has started the auction.
+\item Never transfer any assets (money, shares, companies) in a way
+  not explicitly allowed by the rules. You can't sponsor your
+  corporations, you can't ``steal'' from the treasury of your
+  corporations, you can't give money or companies to other players,
+  not even as a gift, etc. Keep all assets next to their respective
+  owner (players, corporations, foreign investor, bank) and clearly
+  separated from others.
+\item It is very tempting to think of the share price cards you see on
+  the table as the price you have to pay to buy a share (or the price
+  the bank will pay you if you sell a share). However, you have to pay
+  the next higher available share price (and you will be paid the next
+  lower available share price). You can see the next regular share
+  prices in the corners of the share price cards next to the single
+  arrows, but remember that cards that are already in use are skipped,
+  so the relevant price may be even higher (or lower, in case you
+  sell). \textbf{TODO: Adjust to actual share price card design.}
+\item Newly drawn companies are not available for auction in the same
+  turn. They have to wait until next turn. (Even the foreign investor
+  cannot buy them in phase 5 of the same turn.)
+\item Never ever use any \$ or any company twice in phase 6. Don't
+  forget to turn vertically the companies and the money used. Execute
+  each transaction separately. Things like ``The Bear buys MHE for \$8
+  from the Eagle, and at the same time the Eagle buys the BPM from the
+  Bear for \$8, too, so we just swap companies and no money'' don't
+  work. First transfer one of the companies (let's say the MHE) and
+  pay the money (and turn both vertically), then do the same with the
+  other company (the BPM), pay the money (which must not be the money
+  turned vertically), and turn them both vertically.
+\item The cost of ownership is defined solely by the back of the
+  top-most card in the deck of unrevealed company cards (or, if the
+  deck has run out, by the game end card left behind). Once a company
+  card has been drawn, it will never be flipped back again and its
+  back is irrelevant for the rest of the game.
+\end{itemize}
+\end{multicols}
+
+\chapter{Notes for players of the original
+  \emph{Rolling Stock} or 18xx games}
+
+\begin{multicols}{2}
+
+\textbf{TODO: Vet if we want this chapter in the printed player's
+  guide at all.}
+  
+This chapter is for those that already have previous knowledge by
+having played the original \emph{Rolling Stock} game and/or 18xx
+games. This knowledge can be extremely helpful when grasping
+\emph{Rolling Stock Stars}, but there are also some caveats where you
+have to ``un-learn'' certain aspects of those games.
+
+\section{If you have played the original \emph{Rolling Stock}\dots}
+
+\dots you are probably asking yourself now why you should play
+\emph{Rolling Stock Stars} instead of (or even in addition to) the
+original game. There are two obvious, but radically different
+conclusions people might jump to: The one extreme is the notion of
+\emph{Rolling Stock Stars} as an ``improved'' version of \emph{Rolling
+  Stock}: After years of experience with the original game, it was
+certainly time for a 2nd, more polished edition which quirks
+removed. The other extreme is the verdict of \emph{Rolling Stock
+  Stars} being a ``streamlined'', ``more-forgiving'', or even
+``watered-down'' version of the original game. The former would make
+you prefer \emph{Stars} over the original game in any case, while the
+latter would position \emph{Stars} as a learning game, over which
+experienced players would prefer the original game.
+
+In reality, it's not that easy. Both conclusions are not entirely
+wrong, but still more wrong than right. \emph{Stars} would certainly
+not have been possible without the experience many players made with
+the original game. Also, \emph{Stars} is indeed meant to be more
+approachable and less niche than the original game. Still, it would be
+wrong to generally think about one game as fundamentally ``better''
+than the other, or as \emph{Stars} being only meant for beginners or
+more casual players. Both games are much more different than the
+seemingly small differences would suggest. While there are experienced
+players preferring the original game over \emph{Stars} (or vice
+versa!), some just claim that the games are too different to be ranked
+directly against each other.
+
+\textbf{TODO: Finish!}
+
+\section{If you are an 18xx player\dots}
+
+\dots many concepts in \emph{Rolling Stock Stars} will be familiar to
+you. However, there are a number of significant differences. The
+following list will help you to avoid the most common traps for 18xx
+players.
+
+\begin{itemize}
+\item Players start with \$30 for every player count except
+  6. (Basically, instead of decreasing the money of each player, the
+  game size is increased to accommodate more players.)
+\item Pay special attention to phases 3 and 4, which are performed in
+  ``any order''. Don't wait until it's ``your turn''. Just act.
+\item In phase 1 (you might want to call it ``share round''), you
+  indeed have exactly and only one action whenever it is your
+  turn. \emph{Either} buy \emph{or} sell \emph{or} start an auction
+  \emph{or} pass. And if you sell, it's only ever \emph{one} share per
+  action.
+\item Otherwise, share trading has almost no restrictions compared to
+  18xx. There is no certificate limit. There is no limit of shares in
+  the pool. There is no limit of shares an individual player may hold
+  (may be 100\,\%). You may sell shares of a corporation that has just
+  been founded. You may even buy shares you have sold before in the
+  same phase. (Oh yes! But keep in mind the next item below. In other
+  words: If you keep selling and buying the same share, you will lose
+  money each time.)
+\item Every individual sell and buy action will modify the share price,
+  and you will get/pay the \emph{new} share price (see also the
+  non-18xx-specific notes above).
+\item At the end of phase 1 (the ``share round''), fully sold shares
+  will \emph{not} change their share price.
+\item There is no notion of a share being explicitly a ``10\,\%
+  share'' or a ``20\,\% share''. Keep in mind that shares not yet
+  issued basically don't exist. (After the IPO, the only way
+  un-issued shares enter the game is by issuing shares in phase 8.)
+  If a company has two shares issued, each is implicitly a 50\,\%
+  share. If it has three shares issued, each is 33\,\%, and so
+  on. Also note that the president's share is a single share, not a
+  double share.
+\item There is no ``emergency money raising''. If your corporation
+  has a negative net income and cannot pay for it, it goes bankrupt.
+\item You set a dividend per share and then pay it from treasury. The
+  dividend you pay has no direct link to the income of your
+  corporation in the same turn. Even if your corporation has a
+  negative income, it may still pay dividends (if there is enough
+  money left in the treasury). Furthermore, the share price adjustment is
+  not directly coupled to the dividends you pay (despite this happening
+  in the same phase 6). It is indirectly coupled (via the star count),
+  but the effects are the opposite of what you would expect: In
+  general, paying a dividend makes it more likely your share
+  price will drop, while not paying a dividend (strictly speaking:
+  paying a dividend of \$0) makes it more likely your share price
+  will increase.
+\item In a certain way, the companies in \emph{Rolling Stock Stars}
+  are a bit of both, privates and trains in 18xx. However, there is no
+  upper limit of the number of subsidiary companies in a corporation
+  (no ``train limit''), and companies are never scrapped by
+  force. (The latter is, however, not entirely alien to the 18xx
+  world. \emph{1873 Harzbahn} uses a very similar cost-of-ownership
+  system.)
+\item Phase 4 (new player order) works exactly like in \emph{1844:
+    Switzerland}. If you know that game, nothing new here. Otherwise:
+  It's basically a refined priority deal.
+\item The bank has unlimited money.
+\end{itemize}
+
+
+\end{multicols}
+
+
+\chapter{Variants}
+\begin{multicols}{2}
+
+The following introduces several possible variants.
+
+\textbf{TODO: Vet for each if we want it in the printed player's guide.}
+
+\section{Deals and negotiation}
+\label{deals}
+
+\textbf{TODO: Concern here is that this is mostly of general concern
+  for many games of a similar type. It might not be worth it to put
+  this into the printed player's guide where people would expect more
+  specific information.}
+
+The rules are (intentionally) silent about deals and
+negotiations. Rules about deals and negotiations are a bit like rules
+about showing up on time to start the game or switching off your
+mobile phone while playing. Things are different for games with secret
+information, i.\,e. where some players have information others
+don't. In that case, you need rules about legal ways to share (or not
+to share) this information. But \emph{Rolling Stock Stars} has no secret
+information. Of course, the order and composition of the deck has a
+random component, but no player knows more than any other.
+
+So by default, players can just say whatever they want. Nothing is
+forbidden, but nothing is enforced either. Feel free to forge deals
+and alliances, but remember that the rules won't help you to enforce
+those deals. (I believe it is basically impossible to write consistent
+rules that would make freeform deals binding. Deals are too often
+worded ambiguously, or they can't be fulfilled without breaking the
+rules, or a player has agreed to multiple deals that are mutually
+exclusive.) There is little danger that \emph{Rolling Stock} would
+degenerate into a \emph{Diplomacy}-style backstabbing game, simply
+because long-term deals are rare and the short-term deals neither
+require nor foster a long-term partnership (if at all, those will
+implicitly emerge from overarching strategic goals, e.\.g. a single
+player is running away with the game so that the other players
+cooperate with each other more intensely to catch up -- perhaps they
+will even manage to implement an embargo against the leading
+player). In JC Lawrence's words: Both sellers and buyers (in phase 3)
+are ``naturally promiscuous''.
+
+Groups might have their own etiquette about deals and
+negotiations. Feel free to implement whatever you feel is right.
+However, I'd strongly discourage from secret negotiations. They would
+be a huge time drain, and I believe they are neither in the spirit of
+the game nor will players feel a great need for them.
+
+In general, you should make sure that negotiations don't stall the
+game for too long. If you can't avoid spending
+an uncomfortable amount of time with negotiations and/or if you want
+to limit negotiations for other reasons, try one of the following more
+formalized variants:
+
+\begin{itemize}
+\item Strictly limit the time for the ``any order'' phases (e.\,g. two
+  minutes for phase 3 and one minute for phase 4, feel free to use any
+  value you see fit). In all ``sequential'' phases, players have to
+  decide quickly and must not negotiate with other players when it's
+  their turn to do something. At any other time, they may negotiate
+  freely.
+\item Strictly limit negotiations to phase 3. (The more experienced
+  players become, the more they will feel the need to plan in
+  advance. The decision to issue a share in phase 8 or to form a
+  corporation in phase 9 depends on future deals in phase 3 of the
+  next turn. Players might be tempted to meticulously arrange all
+  those deals for phase 3 as soon as in phase 8 or 9 of the previous
+  turn, which might stall the game quite seriously.)
+\item The most radical solution is a strict ``no deals, no
+  negotiations'' policy. In phase 3, offers and counter-offers can
+  still be made, but without additional table-talk. The following will
+  still be OK: ``Do you want to buy the MAD for \$50?'' -- ``I'll give
+  you \$45.'' -- ``Let's say \$47.'' -- ``Deal.'' Not OK would be any
+  additional arguments along the lines: ``I can't give you more than
+  \$45 because I still need these \$12 left to buy the PR from Chris's
+  Horse corp. Furthermore, the \$45 are good enough for you because
+  that will allow you to pay dividends and still rise in share
+  price.'' This radical variant is most suitable for ``blitz''
+  games. You might manage a full game in only 90 minutes. But keep in
+  mind that ``Rolling Stock Stars'' is a very interactive game, and
+  negotiations and deals are supposed to be part of the fun.
+\end{itemize}
+
+There is one specific type of situation where a certain type of
+players might create a sense of backstabbing.
+
+\emph{Example: Alice is the president of the ``Android'' corporation,
+  which owns the WT and the OL. Bob is the president of the ``Bear''
+  corporation, which owns the MS and the BY. Alice and Bob agree that
+  they should ``swap'' the OL and the BY to get better
+  synergies. Since a direct swap is not possible, what formally has to
+  happen is two transactions: (1) The ``Bear'' buys the OL from the
+  ``Android''. (2) The ``Android'' buys the BY from the
+  ``Bear''. Alice and Bob agree to do both transactions for the
+  minimum possible price of \$7 (because both corporations are short
+  of cash at the moment). The order of the transactions doesn't really
+  matter, but you have to start somewhere. So Alice's ``Android''
+  hands over the OL to Bob's ``Bear'', and the ``Bear'' transfers \$7
+  to the ``Android''. Alice wants to go on and to execute the second
+  transaction, but in that moment, ``all of a sudden'', Bob has second
+  thoughts and refuses. Alice feels backstabbed. Bob's behavior is
+  completely legal, though. The rules don't enforce any connection
+  between transactions.}
+
+If this kind of situation appears to be a problem in your games, you
+might want to introduce a variant rule that allows ``complex''
+transactions where a number of individual transactions can be executed in
+one step (so that the kind of ``second thoughts'' Bob had in the
+example are rendered impossible). But make sure that the ``complex''
+transaction would still be legal if executed in a series of individual
+transactions. It is still impossible to ``swap'' companies if the
+corporations don't have enough money to pay for their newly acquired
+companies, or if both corporations only own one company.
+
+\section{Secret private money}
+
+\textbf{TODO: Concern here is what's written below anyway: If you
+  don't forbid note taking, money is anyway trackable, even by players
+  with weak memory.}
+
+In the rules, all assets are open for inspection. Some players,
+however, prefer to play with secret private money. (The treasury of
+corporations has to be open because the stars have to be counted in
+phase 6.) Feel free to do so as a variant, but keep in mind that the
+private money is perfectly trackable. If you allow players to take
+notes on paper (which is strongly encouraged to speed up the game),
+then tracking the private money of each player becomes merely a matter
+of diligence, and most players will probably argue you should simply
+play with open money to spare everybody the tedious tracking work. If
+you disallow notes (or only allow specific kind of notes), tracking
+private money becomes a brain exercise, which only some players
+consider fun. Others simply won't bother and leave it to their
+intuition, which will make auctions less predictable (``How much money
+will he have?  How much do I have to bid to kick him out of the
+auction?''). Again, some players will consider that fun, others
+not. It's your call.
+
+\section{Open companies}
+
+Some players dislike the unpredictability of the deck. To solve that,
+you can play with an open deck. Build the deck as usual, but then
+declare it open for inspection. To facilitate inspection, you can turn
+all company cards face-up. In that case, you should use one each of
+the unused green and blue company cards to mark the current cost of
+ownership. (Once the top-most card of the deck is green, place the
+unused green company card face-down next to the deck. Correspondingly,
+do the same once the top-most card is blue.)
+
+\section{Two-player variant}
+
+\textbf{TODO: I would either toss this out completely or make it
+  ``official'' (so that we can label the box as \emph{2 to 6
+    players}. I guess this needs more test games for the final call.}
+
+To play with two players, set up the game as if you were playing with
+four players. Then, each player takes the position of two players in
+the four-player game simultaneously. Player A starts with his
+simulated ``right hand'' player in player order position 1. Player B
+starts with his simulated ``left hand'' player in position 2 and his
+simulated ``right hand'' player in position 3. Finally, player A
+starts with his simulated ``left hand'' player in position 4.
+
+Play the game normally, as if it were a four-player game. To win, your
+\emph{lower ranked} simulated player must be better than the lower
+ranked simulated player of your opponent.
+
+\emph{Example: Alice's ``right hand'' player ends up first in the
+  final ranking with a huge margin, and her ``left hand'' player ends
+  up on a close last place. Bob's simulated players end up on rank 2
+  and 3, very close to Alice's ``left hand'' player. Bob wins the game
+  because his lower ranked player is better than Alice's lower ranked
+  player.}
+
+\emph{Rolling Stock} is full of win-win deals. Forging those deal
+between opponents isn't really interesting any longer in a two-player
+game, because there is no third (or forth or fifth) party any longer
+relative to which the two dealing players would win. While deals
+between opposing players are in theory still possible in the
+two-player variant, they would only happen if the two players had a
+different understanding of the benefits of the deal and were both
+thinking they were winning more than the other. Deals between
+``allied'' simulated players are obviously highly encouraged, and the
+two-player variant is very suited as an exercise for cooperative
+strategies. You even have to make sure that both simulated players
+benefit in a similar way because you can only win if you balance the
+result of your two simulated players. That's very similar to a real
+four-player game. (Of course, you can ``switch camps'' at any time in
+a real four-player game and forge deals ``promiscuously'' with
+changing partners, while the two camps are fixed in the two-player
+variant.)
+\end{multicols}
+
+\chapter{Overview of companies}
+
+\textbf{TODO: I think we should have the list of companies for
+  reference. Can be rather short. Question is if we also want the
+  ``flavor texts'', which I have left in below to vet.}
+
+As an homage to the 18xx series of railroad games, games from that
+series that feature one or more of the companies represented in
+\emph{Rolling Stock Stars} are mentioned here.
+
+\section{Red companies}
+
+The red companies are early Prussian railroad companies from the first
+half of the 19\textsuperscript{th} century.  The same six companies
+are represented as \emph{Vorpreußen} in Michael Meier-Bachl's
+\emph{1835} (with slightly different names, though). Some of the
+companies can also be found in other games: The MHE in Klaus
+Kiermeier's \emph{1873 Harzbahn}, the BPM and the BSE in David Hecht's
+\emph{18EU}, the BME and KME in Wolfram Janich's \emph{18Rhl --
+  Rhineland}, and the AKE in Wolfram Janich's \emph{1842: Schleswig
+  Holstein}.
+
+\section{Orange companies}
+
+The orange companies are the railroads of the various German states in
+the middle of the 19\textsuperscript{th} century.  Again, you will
+find the same companies (with slightly different names) in Michael
+Meier-Bachl's \emph{1835}. In addition, David Hecht's \emph{18EU}
+features the BY and the PR, and Wolfram Jahnich's \emph{18SX} the SX.
+In \emph{Rolling Stock Stars}, these companies start as private companies,
+in the 18xx games, they are corporations.  Thus, the games 
+somewhat misrepresent history, as all these companies were
+state-owned.
+
+\section{Yellow companies}
+
+The yellow tier of companies covers the late 19\textsuperscript{th}
+and early 20\textsuperscript{th} century. The DR is the state railroad
+of the now unified German Empire, while all the other yellow companies
+represent the railroad companies of the countries neighboring
+Germany. Again, these companies were mostly state-owned. Representing
+them as tradeable companies is once more bending history a bit. You
+can find many of these companies in David Hecht's games: The SNCF, B,
+DR, NS, and KK in \emph{18EU}, the SNCF and B also in \emph{1826}, and
+the DSB in \emph{18Scan}. Leonhard Orgler's \emph{1837} features the
+KK, as does Leonhard Orgler's and Helmut Ohley's \emph{1824}. The SBB
+is the largest company in Peter Minder's and Helmut Ohley's
+\emph{1844: Switzerland}.
+
+\section{Green companies}
+
+Historically, we are now moving deep into the 20\textsuperscript{th}
+century. Geographically, we are expanding towards the periphery of
+Europe. Two companies are not strictly railroad companies: The E
+(representing the tunnel between Britain and France) and the BSR (a
+hypothetical company running the ferries, bridges and tunnels in the
+Baltic Sea). David Hecht's games feature two of the green companies:
+The FS in \emph{18EU} and the SJ in \emph{18Scan}.
+
+\section{Blue companies}
+
+The blue tier of companies contains no railroad companies at all, but
+the modern seaborne and airborne competitors. HA, HH, and HR are the
+three largest container ports in Europe. MAD, LHR, CDG, and FRA are
+the four largest European airports. Passengers and cargo have to reach
+the ports and airports, so those companies are not only competitors of
+the railroad companies but also offer some opportunities to
+synergize.
+
+\textbf{TODO: I have elided the credits. With the development of the
+  game as it happened, I cannot really name ``core'' playtesters
+  anymore, and listing them all (as in the original game) has become
+  plainly impossible. Depending on tast, we could add a disclaimer
+  like this, and then just have a few special persons mentioned: Scott
+  as the publisher/developer, Toby for the online version etc. But I feel
+  it's probably better to skip the credits entirely and perhaps
+  mention the online version in its own section somewhere in the beginning.}
+
+\end{document}
